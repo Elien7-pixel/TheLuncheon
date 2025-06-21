@@ -6,11 +6,13 @@ import { Button } from "@/components/ui/button";
 const ImageSlideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  // Placeholder images - these will be replaced when you provide the actual images
+  // Your beautiful event photos
   const images = [
-    "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop"
+    "/lovable-uploads/036d44a8-1164-4e81-81da-cfe1967699ab.png",
+    "/lovable-uploads/212329a7-4532-4b35-9e6f-42655cc24f39.png",
+    "/lovable-uploads/d39985e2-833e-409e-8194-1390593a9c70.png",
+    "/lovable-uploads/673c729f-a95a-483d-a99f-9b909889fcce.png",
+    "/lovable-uploads/99e63587-b28e-4030-9d20-96350db01e03.png"
   ];
 
   const nextSlide = () => {
@@ -38,7 +40,7 @@ const ImageSlideshow = () => {
           >
             <img
               src={image}
-              alt={`Slideshow image ${index + 1}`}
+              alt={`Elegant event setup ${index + 1}`}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

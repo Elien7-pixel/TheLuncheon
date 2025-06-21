@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Clock, MapPin, Users, Mic, Gamepad2, Award } from "lucide-react";
+import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import ImageSlideshow from "@/components/ImageSlideshow";
 
 const Index = () => {
@@ -23,8 +23,8 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <p className="text-lg md:text-xl font-light tracking-widest mb-4 animate-fade-in opacity-90">
-            You Are Invited
+          <p className="text-2xl md:text-4xl lg:text-5xl font-light tracking-widest mb-6 animate-fade-in opacity-90">
+            You Are Invited To:
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in-up">
             The Prestige Luncheon
@@ -42,7 +42,6 @@ const Index = () => {
             An Elegant Social Experience
           </h2>
           
-          {/* Placeholder for Images Slideshow */}
           <div className="mb-16">
             <ImageSlideshow />
           </div>
@@ -57,41 +56,41 @@ const Index = () => {
           </h3>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-none shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Mic className="w-8 h-8 text-amber-700" />
-                </div>
-                <h4 className="text-xl font-serif font-bold text-amber-900 mb-4">Motivational Talks</h4>
-                <p className="text-stone-600 leading-relaxed">
+            <div className="text-center group">
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-amber-200">
+                <h4 className="text-2xl font-serif font-bold text-amber-900 mb-6 group-hover:text-amber-800 transition-colors">
+                  Motivational Talks
+                </h4>
+                <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-6 rounded-full"></div>
+                <p className="text-stone-700 leading-relaxed text-lg">
                   Inspiring speakers sharing wisdom and experiences to motivate your journey ahead.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="border-none shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Award className="w-8 h-8 text-amber-700" />
-                </div>
-                <h4 className="text-xl font-serif font-bold text-amber-900 mb-4">Poetry Sessions</h4>
-                <p className="text-stone-600 leading-relaxed">
+            <div className="text-center group">
+              <div className="bg-gradient-to-br from-stone-50 to-stone-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-stone-200">
+                <h4 className="text-2xl font-serif font-bold text-amber-900 mb-6 group-hover:text-amber-800 transition-colors">
+                  Poetry Sessions
+                </h4>
+                <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-6 rounded-full"></div>
+                <p className="text-stone-700 leading-relaxed text-lg">
                   Beautiful poetry performances and open mic opportunities for creative expression.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="border-none shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Gamepad2 className="w-8 h-8 text-amber-700" />
-                </div>
-                <h4 className="text-xl font-serif font-bold text-amber-900 mb-4">Interactive Games</h4>
-                <p className="text-stone-600 leading-relaxed">
+            <div className="text-center group">
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-amber-200">
+                <h4 className="text-2xl font-serif font-bold text-amber-900 mb-6 group-hover:text-amber-800 transition-colors">
+                  Interactive Games
+                </h4>
+                <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-6 rounded-full"></div>
+                <p className="text-stone-700 leading-relaxed text-lg">
                   Fun activities and games to build connections and create lasting memories.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
