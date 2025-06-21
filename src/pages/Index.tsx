@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Clock, MapPin, Users, Mic, GameController2, Award } from "lucide-react";
+import { Calendar, Clock, MapPin, Users, Mic, Gamepad2, Award } from "lucide-react";
 import ImageSlideshow from "@/components/ImageSlideshow";
 
 const Index = () => {
@@ -84,7 +84,7 @@ const Index = () => {
             <Card className="border-none shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <GameController2 className="w-8 h-8 text-amber-700" />
+                  <Gamepad2 className="w-8 h-8 text-amber-700" />
                 </div>
                 <h4 className="text-xl font-serif font-bold text-amber-900 mb-4">Interactive Games</h4>
                 <p className="text-stone-600 leading-relaxed">
