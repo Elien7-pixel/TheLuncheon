@@ -86,6 +86,11 @@
   .font-serif {
     font-family: 'Playfair Display', serif;
   }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer base {
@@ -102,7 +107,7 @@
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -113,7 +118,18 @@
 @keyframes fade-in-up {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up-fade {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
   }
   to {
     opacity: 1;
@@ -122,13 +138,45 @@
 }
 
 .animate-fade-in {
-  animation: fade-in 1s ease-out;
+  animation: fade-in 1.2s ease-out;
 }
 
 .animate-fade-in-up {
-  animation: fade-in-up 1s ease-out 0.3s both;
+  animation: fade-in-up 1.5s ease-out 0.3s both;
 }
 
 .animate-fade-in-delayed {
-  animation: fade-in 1s ease-out 0.6s both;
+  animation: fade-in 1.5s ease-out 0.6s both;
+}
+
+.animate-slide-up-fade {
+  animation: slide-up-fade 1s ease-out;
+}
+
+/* Intersection Observer triggered animations */
+@keyframes fadeInOnScroll {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-on-scroll {
+  animation: fadeInOnScroll 1s ease-out;
+}
+
+/* Enhanced scroll-triggered animations */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+section.animate-fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
