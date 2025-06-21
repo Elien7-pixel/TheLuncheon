@@ -18,7 +18,7 @@ const MenDressCodeSlideshow = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 4000);
+    const timer = setInterval(nextSlide, 3000);
     return () => clearInterval(timer);
   }, []);
 
@@ -27,7 +27,7 @@ const MenDressCodeSlideshow = () => {
       {images.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-700 ${
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >

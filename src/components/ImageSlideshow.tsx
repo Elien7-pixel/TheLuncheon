@@ -18,17 +18,17 @@ const ImageSlideshow = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
+    const timer = setInterval(nextSlide, 3000);
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className="relative max-w-4xl mx-auto">
+    <div className="relative w-full">
       <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
+            className={`absolute inset-0 transition-opacity duration-700 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -39,21 +39,6 @@ const ImageSlideshow = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
           </div>
-        ))}
-      </div>
-
-      {/* Dots Indicator */}
-      <div className="flex justify-center mt-6 space-x-2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? "bg-amber-700 w-8" 
-                : "bg-amber-300 hover:bg-amber-500"
-            }`}
-          />
         ))}
       </div>
     </div>
