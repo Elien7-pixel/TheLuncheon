@@ -1,7 +1,5 @@
 
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const ImageSlideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,10 +15,6 @@ const ImageSlideshow = () => {
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
   };
 
   useEffect(() => {
@@ -47,25 +41,6 @@ const ImageSlideshow = () => {
           </div>
         ))}
       </div>
-
-      {/* Navigation Buttons */}
-      <Button
-        variant="outline"
-        size="icon"
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white border-none shadow-lg"
-      >
-        <ChevronLeft className="h-6 w-6 text-amber-700" />
-      </Button>
-      
-      <Button
-        variant="outline"
-        size="icon"
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white border-none shadow-lg"
-      >
-        <ChevronRight className="h-6 w-6 text-amber-700" />
-      </Button>
 
       {/* Dots Indicator */}
       <div className="flex justify-center mt-6 space-x-2">

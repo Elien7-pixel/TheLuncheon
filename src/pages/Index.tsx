@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import ImageSlideshow from "@/components/ImageSlideshow";
+import WomenDressCodeSlideshow from "@/components/WomenDressCodeSlideshow";
 
 const Index = () => {
   const handleReservation = () => {
@@ -23,7 +24,7 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <p className="text-2xl md:text-4xl lg:text-5xl font-light tracking-widest mb-6 animate-fade-in opacity-90">
+          <p className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-widest mb-6 animate-fade-in opacity-90">
             You Are Invited To:
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in-up">
@@ -49,47 +50,54 @@ const Index = () => {
       </section>
 
       {/* What to Expect Section */}
-      <section className="py-20 px-4 bg-stone-50">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-20 px-4 bg-stone-50 relative overflow-hidden">
+        {/* Background dining table icons */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="grid grid-cols-8 md:grid-cols-12 gap-8 h-full">
+            {Array.from({ length: 48 }).map((_, i) => (
+              <div key={i} className="flex items-center justify-center">
+                <div className="w-8 h-8 text-amber-600">
+                  🍽️
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div className="max-w-6xl mx-auto relative z-10">
           <h3 className="text-3xl md:text-4xl font-serif font-bold text-amber-900 text-center mb-16">
             What to Expect
           </h3>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="space-y-12">
             <div className="text-center group">
-              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-amber-200">
-                <h4 className="text-2xl font-serif font-bold text-amber-900 mb-6 group-hover:text-amber-800 transition-colors">
-                  Motivational Talks
-                </h4>
-                <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-6 rounded-full"></div>
-                <p className="text-stone-700 leading-relaxed text-lg">
-                  Inspiring speakers sharing wisdom and experiences to motivate your journey ahead.
-                </p>
-              </div>
+              <h4 className="text-3xl font-serif font-bold text-amber-900 mb-6 group-hover:text-amber-800 transition-colors">
+                Motivational Talks
+              </h4>
+              <div className="w-24 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-6 rounded-full"></div>
+              <p className="text-stone-700 leading-relaxed text-xl max-w-3xl mx-auto">
+                Inspiring speakers sharing wisdom and experiences to motivate your journey ahead.
+              </p>
             </div>
 
             <div className="text-center group">
-              <div className="bg-gradient-to-br from-stone-50 to-stone-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-stone-200">
-                <h4 className="text-2xl font-serif font-bold text-amber-900 mb-6 group-hover:text-amber-800 transition-colors">
-                  Poetry Sessions
-                </h4>
-                <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-6 rounded-full"></div>
-                <p className="text-stone-700 leading-relaxed text-lg">
-                  Beautiful poetry performances and open mic opportunities for creative expression.
-                </p>
-              </div>
+              <h4 className="text-3xl font-serif font-bold text-amber-900 mb-6 group-hover:text-amber-800 transition-colors">
+                Poetry Sessions
+              </h4>
+              <div className="w-24 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-6 rounded-full"></div>
+              <p className="text-stone-700 leading-relaxed text-xl max-w-3xl mx-auto">
+                Beautiful poetry performances and open mic opportunities for creative expression.
+              </p>
             </div>
 
             <div className="text-center group">
-              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-amber-200">
-                <h4 className="text-2xl font-serif font-bold text-amber-900 mb-6 group-hover:text-amber-800 transition-colors">
-                  Interactive Games
-                </h4>
-                <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-6 rounded-full"></div>
-                <p className="text-stone-700 leading-relaxed text-lg">
-                  Fun activities and games to build connections and create lasting memories.
-                </p>
-              </div>
+              <h4 className="text-3xl font-serif font-bold text-amber-900 mb-6 group-hover:text-amber-800 transition-colors">
+                Interactive Games
+              </h4>
+              <div className="w-24 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-6 rounded-full"></div>
+              <p className="text-stone-700 leading-relaxed text-xl max-w-3xl mx-auto">
+                Fun activities and games to build connections and create lasting memories.
+              </p>
             </div>
           </div>
         </div>
@@ -106,15 +114,13 @@ const Index = () => {
             <div className="text-center">
               <h4 className="text-2xl font-serif font-bold text-amber-900 mb-6">Women</h4>
               <p className="text-lg text-stone-600 mb-8">Spring formal solid pastels</p>
-              <div className="bg-stone-100 rounded-lg p-8 min-h-[300px] flex items-center justify-center">
-                <p className="text-stone-500 italic">Women's dress code slideshow will appear here</p>
-              </div>
+              <WomenDressCodeSlideshow />
             </div>
             
             <div className="text-center">
               <h4 className="text-2xl font-serif font-bold text-amber-900 mb-6">Men</h4>
               <p className="text-lg text-stone-600 mb-8">Spring formal neutral earth tones</p>
-              <div className="bg-stone-100 rounded-lg p-8 min-h-[300px] flex items-center justify-center">
+              <div className="bg-stone-100 rounded-lg p-8 min-h-[400px] flex items-center justify-center">
                 <p className="text-stone-500 italic">Men's dress code slideshow will appear here</p>
               </div>
             </div>
