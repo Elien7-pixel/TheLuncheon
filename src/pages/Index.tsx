@@ -20,6 +20,7 @@ const Index = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(213, 208, 14, 0.3)' }}></div>
       </div>
 
       {/* Content with relative positioning */}
@@ -27,10 +28,10 @@ const Index = () => {
         {/* Hero Section */}
         <section className="min-h-screen flex items-center justify-center animate-fade-in">
           <div className="text-center text-white px-4 max-w-4xl mx-auto">
-            <p className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-widest mb-6 opacity-90 underline decoration-4 underline-offset-8" style={{ color: '#E6D682', textDecorationColor: '#E6D682' }}>
+            <p className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-widest mb-6 opacity-90" style={{ color: '#A5B49E' }}>
               You Are Invited To:
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in-up" style={{ color: '#E6D682' }}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in-up" style={{ color: '#A5B49E' }}>
               The Luncheon
             </h1>
             <p className="text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto animate-fade-in-delayed" style={{ color: '#F7F6EE' }}>
@@ -39,10 +40,13 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Section Separator */}
+        <div className="w-full h-px" style={{ backgroundColor: '#A5B49E' }}></div>
+
         {/* Elegant Social Experience Section */}
         <section className="py-20 px-4 animate-fade-in">
           <div className="max-w-full mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-12 drop-shadow-lg" style={{ color: '#E6D682' }}>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-12 drop-shadow-lg" style={{ color: '#A5B49E' }}>
               An Elegant Social Experience
             </h2>
             
@@ -52,6 +56,9 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Section Separator */}
+        <div className="w-full h-px" style={{ backgroundColor: '#A5B49E' }}></div>
+
         {/* Simplified What to Expect Section */}
         <section className="py-20 px-4 relative overflow-hidden animate-fade-in">
           {/* Background dining table icons */}
@@ -59,7 +66,7 @@ const Index = () => {
             <div className="grid grid-cols-8 md:grid-cols-12 gap-8 h-full">
               {Array.from({ length: 48 }).map((_, i) => (
                 <div key={i} className="flex items-center justify-center">
-                  <div className="w-8 h-8" style={{ color: '#E6D682' }}>
+                  <div className="w-8 h-8" style={{ color: '#A5B49E' }}>
                     🍽️
                   </div>
                 </div>
@@ -74,10 +81,13 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Section Separator */}
+        <div className="w-full h-px" style={{ backgroundColor: '#A5B49E' }}></div>
+
         {/* Dress Code Section */}
         <section className="py-20 px-4 animate-fade-in">
           <div className="max-w-full mx-auto">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16 drop-shadow-lg" style={{ color: '#E6D682' }}>
+            <h3 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16 drop-shadow-lg" style={{ color: '#A5B49E' }}>
               Dress Code
             </h3>
             
@@ -89,8 +99,8 @@ const Index = () => {
               </div>
               
               {/* Bold separator line */}
-              <div className="hidden md:block w-px mx-auto" style={{ backgroundColor: '#E6D682', height: '100%' }}></div>
-              <div className="md:hidden w-full h-px my-8" style={{ backgroundColor: '#E6D682' }}></div>
+              <div className="hidden md:block w-px mx-auto" style={{ backgroundColor: '#A5B49E', height: '100%' }}></div>
+              <div className="md:hidden w-full h-px my-8" style={{ backgroundColor: '#A5B49E' }}></div>
               
               <div className="text-center">
                 <h4 className="text-2xl font-serif font-bold mb-6" style={{ color: '#A5B49E' }}>Men</h4>
@@ -101,54 +111,60 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Section Separator */}
+        <div className="w-full h-px" style={{ backgroundColor: '#A5B49E' }}></div>
+
         {/* Event Details Section */}
         <section className="py-20 px-4 animate-fade-in">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(230, 214, 130, 0.1)', borderColor: 'rgba(230, 214, 130, 0.2)' }}>
+              <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(165, 180, 158, 0.1)', borderColor: 'rgba(165, 180, 158, 0.2)' }}>
                 <div className="flex items-center mb-6">
-                  <Calendar className="w-8 h-8 mr-4" style={{ color: '#E6D682' }} />
+                  <Calendar className="w-8 h-8 mr-4" style={{ color: '#A5B49E' }} />
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Date</h4>
                 </div>
-                <p className="text-xl font-light" style={{ color: '#E6D682' }}>27 September 2025</p>
+                <p className="text-xl font-light" style={{ color: '#A5B49E' }}>27 September 2025</p>
               </div>
 
-              <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(230, 214, 130, 0.1)', borderColor: 'rgba(230, 214, 130, 0.2)' }}>
+              <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(165, 180, 158, 0.1)', borderColor: 'rgba(165, 180, 158, 0.2)' }}>
                 <div className="flex items-center mb-6">
-                  <Clock className="w-8 h-8 mr-4" style={{ color: '#E6D682' }} />
+                  <Clock className="w-8 h-8 mr-4" style={{ color: '#A5B49E' }} />
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Time</h4>
                 </div>
-                <p className="text-xl font-light" style={{ color: '#E6D682' }}>11am - 6pm</p>
+                <p className="text-xl font-light" style={{ color: '#A5B49E' }}>11am - 6pm</p>
               </div>
 
-              <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(230, 214, 130, 0.1)', borderColor: 'rgba(230, 214, 130, 0.2)' }}>
+              <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(165, 180, 158, 0.1)', borderColor: 'rgba(165, 180, 158, 0.2)' }}>
                 <div className="flex items-center mb-6">
-                  <MapPin className="w-8 h-8 mr-4" style={{ color: '#E6D682' }} />
+                  <MapPin className="w-8 h-8 mr-4" style={{ color: '#A5B49E' }} />
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Location</h4>
                 </div>
-                <p className="text-xl font-light" style={{ color: '#E6D682' }}>Sandton, Gauteng</p>
+                <p className="text-xl font-light" style={{ color: '#A5B49E' }}>Sandton, Gauteng</p>
               </div>
 
-              <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(230, 214, 130, 0.1)', borderColor: 'rgba(230, 214, 130, 0.2)' }}>
+              <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(165, 180, 158, 0.1)', borderColor: 'rgba(165, 180, 158, 0.2)' }}>
                 <div className="flex items-center mb-6">
-                  <Users className="w-8 h-8 mr-4" style={{ color: '#E6D682' }} />
+                  <Users className="w-8 h-8 mr-4" style={{ color: '#A5B49E' }} />
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Fee</h4>
                 </div>
-                <p className="text-xl font-light" style={{ color: '#E6D682' }}>R500 per person</p>
+                <p className="text-xl font-light" style={{ color: '#A5B49E' }}>R500 per person</p>
                 <p className="text-sm mt-2" style={{ color: '#A5B49E' }}>Invite plus one for R500</p>
               </div>
             </div>
           </div>
         </section>
 
+        {/* Section Separator */}
+        <div className="w-full h-px" style={{ backgroundColor: '#A5B49E' }}></div>
+
         {/* Reservation Section */}
         <section className="py-20 px-4 animate-fade-in">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4 drop-shadow-lg" style={{ color: '#E6D682' }}>
+            <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4 drop-shadow-lg" style={{ color: '#A5B49E' }}>
               Reserve Your Spot
             </h3>
             <p className="text-xl font-semibold mb-8" style={{ color: '#A5B49E' }}>
-              Spots are limited
+              Spots are limited!!
             </p>
             <p className="text-lg mb-12 max-w-2xl mx-auto leading-relaxed" style={{ color: '#F7F6EE' }}>
               Join us for this elegant celebration. Please click the button below to secure your place at The Luncheon.
@@ -156,7 +172,7 @@ const Index = () => {
             <Button 
               onClick={handleReservation}
               className="px-12 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-              style={{ backgroundColor: '#E6D682', color: '#000000' }}
+              style={{ backgroundColor: '#A5B49E', color: '#000000' }}
             >
               Reserve Now
             </Button>
@@ -167,7 +183,7 @@ const Index = () => {
         <footer className="backdrop-blur-sm py-16 px-4 animate-fade-in" style={{ backgroundColor: 'rgba(165, 180, 158, 0.2)' }}>
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <h4 className="text-2xl font-serif font-bold mb-4" style={{ color: '#E6D682' }}>NB</h4>
+              <h4 className="text-2xl font-serif font-bold mb-4" style={{ color: '#A5B49E' }}>NB</h4>
               <div className="text-left max-w-3xl mx-auto space-y-3" style={{ color: '#F7F6EE' }}>
                 <p>In the event that you cannot make the full payment, you can make a deposit of:</p>
                 <ul className="list-disc list-inside ml-4 space-y-2">
