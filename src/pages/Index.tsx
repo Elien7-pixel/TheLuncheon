@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import ImageSlideshow from "@/components/ImageSlideshow";
@@ -28,10 +27,10 @@ const Index = () => {
         {/* Hero Section */}
         <section className="min-h-screen flex items-center justify-center animate-fade-in">
           <div className="text-center text-white px-4 max-w-4xl mx-auto">
-            <p className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-widest mb-6 opacity-90" style={{ color: '#D5D0E1' }}>
+            <p className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-widest mb-6 opacity-90" style={{ color: '#D5D0E1', fontFamily: 'Carrington, serif' }}>
               You Are Invited To:
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in-up" style={{ color: '#D5D0E1' }}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in-up underline" style={{ color: '#D5D0E1' }}>
               The Luncheon
             </h1>
             <p className="text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto animate-fade-in-delayed" style={{ color: '#F7F6EE' }}>
@@ -63,7 +62,7 @@ const Index = () => {
         <section className="py-20 px-4 relative overflow-hidden animate-fade-in">
           <div className="max-w-6xl mx-auto relative z-10 text-center">
             <p className="text-2xl md:text-3xl leading-relaxed font-light" style={{ color: '#F7F6EE' }}>
-              A vibrant gathering filled with food, drinks, interactive games, engaging conversations and just high-key vibes
+              A vibrant gathering filled with food, drinks, interactive games, engaging conversations and just all round good vibes
             </p>
           </div>
         </section>

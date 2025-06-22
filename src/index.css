@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +5,7 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carrington:wght@400;700&display=swap');
 
 @layer base {
   :root {
