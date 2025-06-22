@@ -28,10 +28,10 @@ const Index = () => {
         {/* Hero Section */}
         <section className="min-h-screen flex items-center justify-center animate-fade-in">
           <div className="text-center text-white px-4 max-w-4xl mx-auto">
-            <p className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-widest mb-6 opacity-90" style={{ color: '#A5B49E' }}>
+            <p className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-widest mb-6 opacity-90" style={{ color: '#D5D0E1' }}>
               You Are Invited To:
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in-up" style={{ color: '#A5B49E' }}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in-up" style={{ color: '#D5D0E1' }}>
               The Luncheon
             </h1>
             <p className="text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto animate-fade-in-delayed" style={{ color: '#F7F6EE' }}>
@@ -46,7 +46,7 @@ const Index = () => {
         {/* Elegant Social Experience Section */}
         <section className="py-20 px-4 animate-fade-in">
           <div className="max-w-full mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-12 drop-shadow-lg" style={{ color: '#A5B49E' }}>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-12 drop-shadow-lg" style={{ color: '#D5D0E1' }}>
               An Elegant Social Experience
             </h2>
             
@@ -74,13 +74,13 @@ const Index = () => {
         {/* Dress Code Section */}
         <section className="py-20 px-4 animate-fade-in">
           <div className="max-w-full mx-auto">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16 drop-shadow-lg" style={{ color: '#A5B49E' }}>
+            <h3 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16 drop-shadow-lg" style={{ color: '#D5D0E1' }}>
               Dress Code
             </h3>
             
             <div className="grid md:grid-cols-2 gap-0">
               <div className="text-center">
-                <h4 className="text-2xl font-serif font-bold mb-6" style={{ color: '#A5B49E' }}>Women</h4>
+                <h4 className="text-2xl font-serif font-bold mb-6" style={{ color: '#D5D0E1' }}>Women</h4>
                 <p className="text-lg mb-8" style={{ color: '#F7F6EE' }}>Spring formal solid pastels</p>
                 <WomenDressCodeSlideshow />
               </div>
@@ -90,7 +90,7 @@ const Index = () => {
               <div className="md:hidden w-full h-px my-8" style={{ backgroundColor: '#A5B49E' }}></div>
               
               <div className="text-center">
-                <h4 className="text-2xl font-serif font-bold mb-6" style={{ color: '#A5B49E' }}>Men</h4>
+                <h4 className="text-2xl font-serif font-bold mb-6" style={{ color: '#D5D0E1' }}>Men</h4>
                 <p className="text-lg mb-8" style={{ color: '#F7F6EE' }}>Spring formal neutral earth tones</p>
                 <MenDressCodeSlideshow />
               </div>
@@ -107,35 +107,35 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(165, 180, 158, 0.1)', borderColor: 'rgba(165, 180, 158, 0.2)' }}>
                 <div className="flex items-center mb-6">
-                  <Calendar className="w-8 h-8 mr-4" style={{ color: '#A5B49E' }} />
+                  <Calendar className="w-8 h-8 mr-4" style={{ color: '#D5D0E1' }} />
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Date</h4>
                 </div>
-                <p className="text-xl font-light" style={{ color: '#A5B49E' }}>27 September 2025</p>
+                <p className="text-xl font-light" style={{ color: '#D5D0E1' }}>27 September 2025</p>
               </div>
 
               <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(165, 180, 158, 0.1)', borderColor: 'rgba(165, 180, 158, 0.2)' }}>
                 <div className="flex items-center mb-6">
-                  <Clock className="w-8 h-8 mr-4" style={{ color: '#A5B49E' }} />
+                  <Clock className="w-8 h-8 mr-4" style={{ color: '#D5D0E1' }} />
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Time</h4>
                 </div>
-                <p className="text-xl font-light" style={{ color: '#A5B49E' }}>11am - 6pm</p>
+                <p className="text-xl font-light" style={{ color: '#D5D0E1' }}>11am - 6pm</p>
               </div>
 
               <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(165, 180, 158, 0.1)', borderColor: 'rgba(165, 180, 158, 0.2)' }}>
                 <div className="flex items-center mb-6">
-                  <MapPin className="w-8 h-8 mr-4" style={{ color: '#A5B49E' }} />
+                  <MapPin className="w-8 h-8 mr-4" style={{ color: '#D5D0E1' }} />
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Location</h4>
                 </div>
-                <p className="text-xl font-light" style={{ color: '#A5B49E' }}>Sandton, Gauteng</p>
+                <p className="text-xl font-light" style={{ color: '#D5D0E1' }}>Sandton, Gauteng</p>
               </div>
 
               <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(165, 180, 158, 0.1)', borderColor: 'rgba(165, 180, 158, 0.2)' }}>
                 <div className="flex items-center mb-6">
-                  <Users className="w-8 h-8 mr-4" style={{ color: '#A5B49E' }} />
+                  <Users className="w-8 h-8 mr-4" style={{ color: '#D5D0E1' }} />
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Fee</h4>
                 </div>
-                <p className="text-xl font-light" style={{ color: '#A5B49E' }}>R500 per person</p>
-                <p className="text-sm mt-2" style={{ color: '#A5B49E' }}>Invite plus one for R500</p>
+                <p className="text-xl font-light" style={{ color: '#D5D0E1' }}>R500 per person</p>
+                <p className="text-sm mt-2" style={{ color: '#D5D0E1' }}>Invite plus one for R500</p>
               </div>
             </div>
           </div>
@@ -147,10 +147,10 @@ const Index = () => {
         {/* Reservation Section */}
         <section className="py-20 px-4 animate-fade-in">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4 drop-shadow-lg" style={{ color: '#A5B49E' }}>
+            <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4 drop-shadow-lg" style={{ color: '#D5D0E1' }}>
               Reserve Your Spot
             </h3>
-            <p className="text-xl font-semibold mb-8" style={{ color: '#A5B49E' }}>
+            <p className="text-xl font-semibold mb-8" style={{ color: '#D5D0E1' }}>
               Spots are limited!!
             </p>
             <p className="text-lg mb-12 max-w-2xl mx-auto leading-relaxed" style={{ color: '#F7F6EE' }}>
