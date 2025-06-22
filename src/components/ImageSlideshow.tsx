@@ -6,11 +6,11 @@ const ImageSlideshow = () => {
   
   // Your beautiful event photos
   const images = [
-    "/lovable-uploads/036d44a8-1164-4e81-81da-cfe1967699ab.png",
-    "/lovable-uploads/212329a7-4532-4b35-9e6f-42655cc24f39.png",
-    "/lovable-uploads/d39985e2-833e-409e-8194-1390593a9c70.png",
-    "/lovable-uploads/673c729f-a95a-483d-a99f-9b909889fcce.png",
-    "/lovable-uploads/99e63587-b28e-4030-9d20-96350db01e03.png"
+    "/lovable-uploads/8e0be563-17bc-4f7c-ad0e-dcf39215a498.png",
+    "/lovable-uploads/aebc52a3-3c02-488f-928e-33be4f4a8331.png",
+    "/lovable-uploads/20a50a13-3833-4a5b-bc89-48a6c55e0202.png",
+    "/lovable-uploads/2c45c992-bef7-44de-b4ff-41271a28a533.png",
+    "/lovable-uploads/bb37a988-6e2b-45ef-ab77-42e7da9ac83d.png"
   ];
 
   const nextSlide = () => {
@@ -18,7 +18,7 @@ const ImageSlideshow = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 3000);
+    const timer = setInterval(nextSlide, 2000);
     return () => clearInterval(timer);
   }, []);
 
