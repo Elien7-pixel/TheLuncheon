@@ -20,7 +20,7 @@ const Index = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(213, 208, 14, 0.3)' }}></div>
+        <div className="absolute inset-0" style={{ backgroundColor: '#D5D0E1', opacity: 0.3 }}></div>
       </div>
 
       {/* Content with relative positioning */}
@@ -61,19 +61,6 @@ const Index = () => {
 
         {/* Simplified What to Expect Section */}
         <section className="py-20 px-4 relative overflow-hidden animate-fade-in">
-          {/* Background dining table icons */}
-          <div className="absolute inset-0 opacity-5 pointer-events-none">
-            <div className="grid grid-cols-8 md:grid-cols-12 gap-8 h-full">
-              {Array.from({ length: 48 }).map((_, i) => (
-                <div key={i} className="flex items-center justify-center">
-                  <div className="w-8 h-8" style={{ color: '#A5B49E' }}>
-                    🍽️
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          
           <div className="max-w-6xl mx-auto relative z-10 text-center">
             <p className="text-2xl md:text-3xl leading-relaxed font-light" style={{ color: '#F7F6EE' }}>
               A vibrant gathering filled with food, drinks, interactive games, engaging conversations and just high-key vibes
@@ -178,6 +165,9 @@ const Index = () => {
             </Button>
           </div>
         </section>
+
+        {/* Section Separator */}
+        <div className="w-full h-px" style={{ backgroundColor: '#A5B49E' }}></div>
 
         {/* Footer */}
         <footer className="backdrop-blur-sm py-16 px-4 animate-fade-in" style={{ backgroundColor: 'rgba(165, 180, 158, 0.2)' }}>
