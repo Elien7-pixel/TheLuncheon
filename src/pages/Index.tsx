@@ -165,29 +165,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Section Separator */}
-        <div className="w-full h-px" style={{ backgroundColor: '#A5B49E' }}></div>
-
-        {/* Footer */}
-        <footer className="backdrop-blur-sm py-16 px-4 animate-fade-in" style={{ backgroundColor: 'rgba(165, 180, 158, 0.2)' }}>
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
-              <h4 className="text-2xl font-serif font-bold mb-4" style={{ color: '#A5B49E' }}>NB</h4>
-              <div className="text-left max-w-3xl mx-auto space-y-3" style={{ color: '#F7F6EE' }}>
-                <p>In the event that you cannot make the full payment, you can make a deposit of:</p>
-                <ul className="list-disc list-inside ml-4 space-y-2">
-                  <li>R250 for yourself</li>
-                  <li>R500 if you are bringing a plus one</li>
-                </ul>
-                <div className="mt-6 space-y-2">
-                  <p><strong>Final date for making deposits:</strong> 15 August 2025</p>
-                  <p><strong>Final date for full payment:</strong> 15 September 2025</p>
-                  <p className="font-semibold" style={{ color: '#A5B49E' }}>Deposit is non-refundable</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
   );
