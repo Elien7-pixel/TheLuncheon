@@ -134,7 +134,6 @@ const Index = () => {
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Fee</h4>
                 </div>
                 <p className="text-xl font-light" style={{ color: '#D5D0E1' }}>R500 per person</p>
-                <p className="text-sm mt-2" style={{ color: '#D5D0E1' }}>Invite plus one for R500</p>
               </div>
             </div>
           </div>
