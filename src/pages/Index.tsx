@@ -125,7 +125,7 @@ const Index = () => {
                   <MapPin className="w-8 h-8 mr-4" style={{ color: '#D5D0E1' }} />
                   <h4 className="text-2xl font-serif font-bold" style={{ color: '#F7F6EE' }}>Location</h4>
                 </div>
-                <p className="text-xl font-light" style={{ color: '#D5D0E1' }}>Sandton, Gauteng</p>
+                <p className="text-xl font-light" style={{ color: '#D5D0E1' }}>Safari Garden Center c/o Lynnwood Rd &, Rubida St, The Willows, Pretoria, 0040</p>
               </div>
 
               <div className="backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-xl transition-all duration-300" style={{ backgroundColor: 'rgba(165, 180, 158, 0.1)', borderColor: 'rgba(165, 180, 158, 0.2)' }}>
